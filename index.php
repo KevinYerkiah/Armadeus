@@ -1,20 +1,27 @@
+<?php
+
+session_start();
+include("connect.php");
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather App</title>
   <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
   <div class="card">
     <!-- search box -->
     <div class="search">
-      <input
-        type="text"
-        placeholder="Enter city name"
-        spellcheck="false"
-      >
+      <input type="text" placeholder="Enter city name" spellcheck="false">
       <button>
         <img src="images/search.png" alt="Search">
       </button>
@@ -22,11 +29,7 @@
 
     <!-- current weather -->
     <div class="weather">
-      <img
-        src="images/rain.png"
-        class="weather-icon"
-        alt="Weather icon"
-      >
+      <img src="images/rain.png" class="weather-icon" alt="Weather icon">
       <h1 class="temp">22°C</h1>
       <h2 class="city">New York</h2>
     </div>
@@ -55,4 +58,5 @@
   <!-- Link to your external JS -->
   <script src="index.js"></script>
 </body>
+
 </html>
